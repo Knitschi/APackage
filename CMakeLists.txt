@@ -1,7 +1,7 @@
 include(cpfAddPackage)
 
 # define namespace name for module
-set( PACKAGE_NAMESPACE app2A )
+set( PACKAGE_NAMESPACE a )
 
 set( briefDescription "An empty C++ command line application used for testing the CPF." )
 set( longDescription "" )
@@ -15,8 +15,8 @@ cpfInitPackageProject(
 
 set( PACKAGE_PRODUCTION_FILES
 	main.cpp
-	mainImpl.cpp
-	mainImpl.h
+	a.cpp
+	a.h
 )
 
 set( PACKAGE_FIXTURE_FILES
@@ -27,7 +27,7 @@ set( PACKAGE_TEST_FILES
 
 # names of the libraries that are linked to this target
 set(PACKAGE_LINKED_LIBRARIES
-	lib1
+	b
 )
 
 set(PACKAGE_LINKED_TEST_LIBRARIES

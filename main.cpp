@@ -1,5 +1,5 @@
 
-#include <app2A/mainImpl.h>
+#include <APackage/a.h>
 
 int main(int argc, char **argv)
 {

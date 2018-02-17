@@ -1,11 +1,9 @@
-#include <app2A/mainImpl.h>
-
-#include <lib1/lib1.h>
+#include <BPackage/b.h>
 
 int mainImpl(int argc, char **argv)
 {
     (void) argc;
     (void) argv;
-    lb1::lib1Function();
+    b::bFunction();
     return 0;
 }
