@@ -27,7 +27,7 @@ set( PACKAGE_TEST_FILES
 
 # names of the libraries that are linked to this target
 set(PACKAGE_LINKED_LIBRARIES
-	b
+	BPackage
 )
 
 set(PACKAGE_LINKED_TEST_LIBRARIES
