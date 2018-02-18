@@ -57,3 +57,4 @@ cpfAddPackage(
 	PLUGIN_DEPENDENCIES		${qtPlatformPlugins}
 	DISTRIBUTION_PACKAGES 	${archiveDevPackageOptions}
 )
+
