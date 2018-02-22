@@ -10,21 +10,4 @@ int mainImpl(int argc, char **argv)
     c::cFunction();
     return 0;
 }
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
+
