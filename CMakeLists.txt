@@ -29,6 +29,10 @@ set( PACKAGE_TEST_FILES
 set(PACKAGE_LINKED_LIBRARIES
 	BPackage
 	CPackage
+	DPackage
+	EPackage
+	FPackage
+	GPackage
 )
 
 set(PACKAGE_LINKED_TEST_LIBRARIES
