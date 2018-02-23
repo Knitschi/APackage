@@ -15,8 +15,8 @@ cpfInitPackageProject(
 
 set( PACKAGE_PRODUCTION_FILES
 	main.cpp
-	a.cpp
-	a.h
+	function.cpp
+	function.h
 )
 
 set( PACKAGE_FIXTURE_FILES
