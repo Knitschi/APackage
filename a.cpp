@@ -9,12 +9,6 @@ int mainImpl(int argc, char **argv)
     b::bFunction();
     c::cFunction();
     return 0;
-}namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
-namespace{} 
+}
+
+
