@@ -10,5 +10,3 @@ int mainImpl(int argc, char **argv)
     c::cFunction();
     return 0;
 }
-
-
