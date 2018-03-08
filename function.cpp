@@ -13,6 +13,7 @@ int mainImpl(int argc, char **argv)
     b::function();
     c::function();
     d::function();
+    d::function2();
     e::function();
     f::function();
     g::function();
