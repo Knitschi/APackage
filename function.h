@@ -1,3 +1,5 @@
 #pragma once
 
-int mainImpl(int argc, char **argv);
+#include <APackage/a_export.h>
+
+A_EXPORT int mainImpl(int argc, char **argv);
