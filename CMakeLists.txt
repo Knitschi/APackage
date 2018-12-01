@@ -1,28 +1,17 @@
+include(cpfInitPackageProject)
 include(cpfAddCppPackage)
 
-# define namespace name for module
-set( PACKAGE_NAMESPACE a )
+cpfInitPackageProject()
 
 set( briefDescription "An empty C++ command line application used for testing the CPF." )
 set( longDescription "" )
 
-cpfInitPackageProject(
-	PACKAGE_NAME
-	${PACKAGE_NAMESPACE}
-)
-
-############################################## Define code files ###################################################
+############################################## Define source files ###################################################
 
 set( PACKAGE_PRODUCTION_FILES
 	main.cpp
 	function.cpp
 	function.h
-)
-
-set( PACKAGE_FIXTURE_FILES
-)
-
-set( PACKAGE_TEST_FILES
 )
 
 # names of the libraries that are linked to this target
@@ -33,9 +22,6 @@ set(PACKAGE_LINKED_LIBRARIES
 	EPackage
 	FPackage
 	GPackage
-)
-
-set(PACKAGE_LINKED_TEST_LIBRARIES
 )
 
 set( distPackageOptions
@@ -49,16 +35,12 @@ set( distPackageOptions
 
 ############################################## Add Package #################################
 cpfAddCppPackage( 
-	PACKAGE_NAME			${PACKAGE_NAME}
-	PACKAGE_NAMESPACE		${PACKAGE_NAMESPACE}
+	PACKAGE_NAMESPACE		a
 	TYPE					CONSOLE_APP
 	BRIEF_DESCRIPTION		${briefDescription}
 	LONG_DESCRIPTION		${longDescription}
 	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
-	FIXTURE_FILES			${PACKAGE_FIXTURE_FILES}
-	TEST_FILES				${PACKAGE_TEST_FILES}
 	LINKED_LIBRARIES		${PACKAGE_LINKED_LIBRARIES}
-	LINKED_TEST_LIBRARIES	${PACKAGE_LINKED_TEST_LIBRARIES}
 	${distPackageOptions}
 	ENABLE_ABI_API_COMPATIBILITY_CHECK_TARGETS FALSE
 	GENERATE_PACKAGE_DOX_FILES
