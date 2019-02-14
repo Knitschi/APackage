@@ -16,12 +16,12 @@ set( PACKAGE_PRODUCTION_FILES
 
 # names of the libraries that are linked to this target
 set(PACKAGE_LINKED_LIBRARIES
-	BPackage
-	CPackage
-	DPackage
-	EPackage
-	FPackage
-	GPackage
+	b::BPackage
+	c::CPackage
+	d::DPackage
+	e::EPackage
+	f::FPackage
+	g::GPackage
 )
 
 set( distPackageOptions
