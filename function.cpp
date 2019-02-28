@@ -8,15 +8,15 @@
 
 int mainImpl(int argc, char **argv)
 {
-    (void) argc;
-    (void) argv;
-    b::function();
-    c::function();
-    d::function();
-    d::function2();
-    e::function();
-    f::function();
-    g::function();
+	(void)argc;
+	(void)argv;
+	b::function();
+	c::function();
+	d::function();
+	d::function2();
+	e::function();
+	f::function();
+	g::function();
 
-    return 0;
+	return 0;
 }
