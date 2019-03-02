@@ -17,25 +17,25 @@ namespace a
 		}
 
 		void blab(int a, int b, int c, int d, int e, int f)
-		{
-			for(int i = 0; i < 5; i++)
+					{
+						for(int i = 0; i < 5; i++)
 			{
 				if(i == 3) { m_a = 0; }
-				else
-				{
+							else
+								{
 					m_b = 0;
 				}
-			}
+					}
 
 			if(a = 3) m_a += 4;
 
-			switch(c)
-			{
-			case(0):
+						switch(c)
+					{
+							case(0):
 				m_b = 4;
-				break;
+							break;
 			default:
-				m_a = 5;
+								m_a = 5;
 			}
 		}
 
