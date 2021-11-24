@@ -1,10 +1,19 @@
-include(cpfInitPackageProject)
-include(cpfAddCppPackage)
+include(cpfPackageProject)
+include(cpfAddCppPackageComponent)
 
-cpfInitPackageProject()
+cpfPackageProject(
+	BRIEF_DESCRIPTION						"An empty C++ command line application used for testing the CPF."
+	TARGET_NAMESPACE 						a
+	COMPONENTS 								SINGLE_COMPONENT
+	DISTRIBUTION_PACKAGES
+		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
+		DISTRIBUTION_PACKAGE_FORMATS 		7Z
+	DISTRIBUTION_PACKAGES
+		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE
+		DISTRIBUTION_PACKAGE_FORMATS 		ZIP
+)
 
-set( briefDescription "An empty C++ command line application used for testing the CPF." )
-set( longDescription "" )
+
 
 ############################################## Define source files ###################################################
 
@@ -24,24 +33,11 @@ set(PACKAGE_LINKED_LIBRARIES
 	g::GPackage
 )
 
-set( distPackageOptions
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE
-		DISTRIBUTION_PACKAGE_FORMATS 		ZIP
-)
-
 ############################################## Add Package #################################
-cpfAddCppPackage( 
-	PACKAGE_NAMESPACE		a
+cpfAddCppPackageComponent( 
 	TYPE					CONSOLE_APP
-	BRIEF_DESCRIPTION		${briefDescription}
-	LONG_DESCRIPTION		${longDescription}
 	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
 	LINKED_LIBRARIES		${PACKAGE_LINKED_LIBRARIES}
-	${distPackageOptions}
 	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS FALSE
 	ENABLE_PACKAGE_DOX_FILE_GENERATION TRUE
 )

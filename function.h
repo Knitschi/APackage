@@ -2,16 +2,16 @@
 
 #include <vector>
 
-#include <APackage/a_export.h>
+#include <APackage/libapackage_export.h>
 
-A_EXPORT int mainImpl(int argc, char **argv);
+LIBAPACKAGE_EXPORT int mainImpl(int argc, char **argv);
 
 namespace a
 {
 	/**
 	\short A doxygen comment.
 	*/
-	class A_EXPORT Blub : std::vector<int>
+	class LIBAPACKAGE_EXPORT Blub : std::vector<int>
 	{
 	public:
 		Blub(int a) : std::vector<int>(3), m_a{1}, m_b{2}
