@@ -2,8 +2,8 @@
 #include <CPackage/function.h>
 #include <DPackage/function.h>
 #include <EPackage/function.h>
-#include <FPackage/function.h>
-#include <GPackage/function.h>
+#include <Component1/function.h>
+#include <Component2/function.h>
 
 #include <APackage/function.h>
 
