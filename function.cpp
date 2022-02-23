@@ -16,8 +16,8 @@ int mainImpl(int argc, char **argv)
 	d::function();
 	d::function2();
 	e::function();
-	f::function();
-	g::function();
+	comp1::function();
+	comp2::function();
 
 	return 0;
 }

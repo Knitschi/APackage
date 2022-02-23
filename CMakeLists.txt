@@ -29,8 +29,8 @@ set(PACKAGE_LINKED_LIBRARIES
 	c::CPackage
 	d::DPackage
 	e::EPackage
-	f::FPackage
-	g::GPackage
+	f::Component1
+	f::Component2
 )
 
 ############################################## Add Package #################################
